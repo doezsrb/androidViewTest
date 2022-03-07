@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#333333</item>
+        <item name="colorPrimaryDark">#0d0d0d</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+    <style name="AppThemeNoAppBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="fontFamily">@font/play</item>
+        <item name="colorPrimary">#333333</item>
+        <item name="colorPrimaryDark">#0d0d0d</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="SwitchStyle">
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="trackTint">@color/switch_color</item>
+    </style>
+    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorAccent</item>
+    </style>
+
+</resources>

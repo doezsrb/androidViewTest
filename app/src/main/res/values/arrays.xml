@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="countries">
+        <item>Afghanistan</item>
+        <item>Andora</item>
+        <item>Belarus</item>
+        <item>Germany</item>
+        <item>Serbia</item>
+        <item>Austria</item>
+        <item>Bolivia</item>
+        <item>Botswana</item>
+    </string-array>
+    <string-array name="menu_drawer">
+        <item>Home</item>
+        <item>Formula Book</item>
+        <item>Browse Topics</item>
+        <item>Attempt Exam</item>
+        <item>Study Planner</item>
+        <item>My Exam</item>
+        <item>Notifications</item>
+        <item>About us</item>
+        <item>Contact us</item>
+        <item>Switch Account</item>
+        <item>Log out</item>
+    </string-array>
+</resources>

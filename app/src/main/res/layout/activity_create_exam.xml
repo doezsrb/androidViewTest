@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateExamActivity">
+
+    <TextView
+        android:paddingStart="30dp"
+        android:id="@+id/shuffleText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Shuflle Question"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/switchShuffle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SwitchCompat
+
+        android:paddingEnd="30dp"
+        style="@style/SwitchStyle"
+        android:id="@+id/switchShuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:text="Number of Questions"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nqText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shuffleText" />
+
+    <TextView
+        android:id="@+id/nqText"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchShuffle" />
+
+    <com.google.android.material.slider.Slider
+
+        app:labelBehavior="gone"
+        android:id="@+id/rangeSlider1"
+        app:thumbColor="@color/colorPrimaryDark"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:trackColorInactive="@android:color/darker_gray"
+        app:trackColorActive="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:valueFrom="20"
+
+        android:valueTo="200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <TextView
+        android:paddingStart="30dp"
+
+        android:gravity="center_vertical"
+        android:id="@+id/textView48"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Time duration"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rangeSlider1" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView48"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+
+            android:tag="disabled"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/checkbutt1"
+            android:text="15 mins"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:textSize="10sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        <Button
+            android:tag="disabled"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/checkbutt2"
+            android:text="30 mins"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:textSize="10sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        <Button
+            android:tag="false"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/checkbutt3"
+            android:text="60 mins"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:textSize="10sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        <Button
+            android:tag="false"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/checkbutt4"
+            android:text="90 mins"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:textSize="10sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        <Button
+            android:tag="false"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/checkbutt5"
+            android:text="120 mins"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:textSize="10sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        <Button
+            android:textSize="10sp"
+            android:tag="false"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/checkbutt6"
+            android:text="210 mins"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        <Button
+
+            android:tag="disabled"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/checkbutt7"
+            android:text="300 mins"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"
+            android:textSize="10sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    </GridLayout>
+    <TextView
+        android:paddingStart="30dp"
+        android:id="@+id/shuffleText2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Explain Answer"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/switchShuffle2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gridLayout" />
+
+    <androidx.appcompat.widget.SwitchCompat
+
+        android:paddingEnd="30dp"
+        style="@style/SwitchStyle"
+        android:id="@+id/switchShuffle2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gridLayout" />
+
+    <Button
+        android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/createButt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+
+        android:text="Create Exam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shuffleText2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

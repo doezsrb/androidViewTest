@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email address"
+        app:layout_constraintBottom_toTopOf="@+id/registereditTextTextPersonName5"
+        app:layout_constraintStart_toStartOf="@+id/registereditTextTextPersonName5" />
+
+    <TextView
+        android:id="@+id/titleIdRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="FssPro"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/registerImageView4"
+        android:layout_width="57dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lion" />
+
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="Fill in your details below to sign up"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleIdRegister" />
+
+    <EditText
+        android:id="@+id/registereditTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerTextView" />
+
+    <EditText
+        android:id="@+id/registereditTextTextPersonName3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registereditTextTextPersonName2" />
+
+    <EditText
+        android:id="@+id/registereditTextTextPersonName4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registereditTextTextPersonName5" />
+
+    <EditText
+        android:id="@+id/registereditTextTextPersonName5"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edittext_border"
+
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registereditTextTextPersonName3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First name"
+        app:layout_constraintBottom_toTopOf="@+id/registereditTextTextPersonName2"
+        app:layout_constraintStart_toStartOf="@+id/registereditTextTextPersonName2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last name"
+        app:layout_constraintBottom_toTopOf="@+id/registereditTextTextPersonName3"
+        app:layout_constraintStart_toStartOf="@+id/registereditTextTextPersonName3" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        app:layout_constraintBottom_toTopOf="@+id/registereditTextTextPersonName4"
+        app:layout_constraintStart_toStartOf="@+id/registereditTextTextPersonName4" />
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/spinnercustom"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/monthSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/registereditTextTextPersonName4" />
+
+    <Spinner
+        android:id="@+id/monthSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/spinnercustom"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/countrySpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registereditTextTextPersonName4" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Month of attempt"
+        app:layout_constraintBottom_toTopOf="@+id/monthSpinner"
+        app:layout_constraintStart_toStartOf="@+id/monthSpinner" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        app:layout_constraintBottom_toTopOf="@+id/countrySpinner"
+        app:layout_constraintStart_toStartOf="@+id/countrySpinner" />
+
+    <Button
+        android:onClick="createAccount"
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/radiusbutton"
+        android:text="@string/sign_up"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registereditTextTextPersonName4" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Already have an account?Sign in here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

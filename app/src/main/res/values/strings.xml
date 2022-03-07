@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FssProApp</string>
+    <string name="main_text">
+        10.000 Topic Wise Practice Question \n
+        10.000 Topic Wise Exam Question \n
+        Create and Take Self Exam \n
+        Track your Strength and Weakness Topic Wise \n
+        Share your Progress and Exam Results with your Class Mates \n
+        {Facebook, Twitter, WhatsApp} \n
+        Formula Book in PDF Version {Downloable} \n
+        Study Planner {create your own study planner to track your progress, you ll be notified
+        everyday from app}
+    </string>
+    <string name="type_account">com.fssproapp.auth</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="shared_preferences_name">com.example0.fssproapp.USER_DATA</string>
+    <string name="formula_text">An action is a logical connection between destinations. Actions are represented in the navigation graph as arrows. Actions usually connect one destination to another, though you can also create global actions that take you to a specific destination from anywhere in your app.
+
+With actions, you\'re representing the different paths that users can take through your app. Note that to actually navigate to destinations, you still need to write the code to perform the navigation. This is covered in the Navigate to a destination section later in this topic.
+
+You can use the Navigation Editor to connect two destinations by doing the following:
+    An action is a logical connection between destinations. Actions are represented in the navigation graph as arrows. Actions usually connect one destination to another, though you can also create global actions that take you to a specific destination from anywhere in your app.
+
+With actions, you\'re representing the different paths that users can take through your app. Note that to actually navigate to destinations, you still need to write the code to perform the navigation. This is covered in the Navigate to a destination section later in this topic.
+
+You can use the Navigation Editor to connect two destinations by doing the following:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer1"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:elevation="10dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:clipToPadding="false"
+            android:elevation="0dp"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingTop="0dp"
+            android:theme="?attr/actionBarTheme"
+            app:contentInsetLeft="0dp"
+
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ViewStub
+            android:id="@+id/fragmentContainer"
+            android:layout="@layout/fragmentcontainer_delay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:background="@android:color/holo_blue_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" android:layout_gravity="start">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:layout_marginTop="50dp"
+                android:id="@+id/imageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerMain2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
